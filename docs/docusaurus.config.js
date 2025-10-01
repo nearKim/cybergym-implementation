@@ -72,11 +72,11 @@ const config = {
             items: [
               {
                 label: 'Getting Started',
-                to: '/docs/getting-started/introduction',
+                to: 'docs/getting-started/introduction',
               },
               {
                 label: 'API Reference',
-                to: '/docs/api/overview',
+                to: 'docs/api/overview',
               },
             ],
           },
@@ -89,7 +89,7 @@ const config = {
               },
               {
                 label: 'Experiments',
-                to: '/docs/experiments/overview',
+                to: 'docs/experiments/overview',
               },
             ],
           },
