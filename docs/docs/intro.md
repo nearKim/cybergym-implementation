@@ -1,14 +1,15 @@
 ---
 slug: /
-title: Welcome to CyberGym
+title: Welcome to CyberGym Implementation
 sidebar_position: 1
 ---
 
-# CyberGym Documentation
+# Intro
 
-Welcome to **CyberGym** - a competitive multi-agent reinforcement learning framework with adaptive opponent synthesis.
+Welcome to **CyberGym-Implementation** - a realistic, large-scale benchmark for evaluating AI agents' cybersecurity capabilities using real-world vulnerabilities.
 
-## Quick Navigation
+
+## Quick Navigation (WIP)
 
 ### 🚀 Getting Started
 - [Introduction](/getting-started/introduction) - Overview of CyberGym
@@ -36,16 +37,9 @@ Welcome to **CyberGym** - a competitive multi-agent reinforcement learning frame
 - [Ablation Studies](/experiments/ablation-studies) - Component analysis
 - [Reproduction Guide](/experiments/reproduction-guide) - Reproduce paper results
 
-## Key Features
+## Research
 
-- **Multi-Agent RL**: Train multiple agents simultaneously in competitive environments
-- **Adaptive Opponents**: Generate opponents that adapt to your agent's strategies
-- **Cybersecurity Focus**: Designed for security research and adversarial scenarios
-- **Reproducible Research**: Full experimental setup and configuration included
-
-## Paper
-
-Read our research paper: [Competitive Multi-Agent Reinforcement Learning with Adaptive Opponent Synthesis](https://arxiv.org/pdf/2506.02548)
+This implementation is based on the [CyberGym benchmark paper](https://arxiv.org/abs/2506.02548). Check the original research for detailed methodology and evaluation metrics.
 
 ## GitHub
 

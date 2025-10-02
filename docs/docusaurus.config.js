@@ -6,7 +6,7 @@ const darkCodeTheme = themes.dracula;
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'CyberGym',
-  tagline: 'Competitive Multi-Agent Reinforcement Learning with Adaptive Opponent Synthesis',
+  tagline: 'A Realistic Large-Scale Benchmark for AI Cybersecurity Capabilities',
   favicon: 'img/favicon.ico',
 
   url: 'https://nearkim.github.io',
