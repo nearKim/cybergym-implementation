@@ -18,7 +18,17 @@ Our ideal datasets for the vulnerability and exploit generation should meet the 
 
 To make vulnerability dataset useful for LLM training, real-world exploits are needed. ARVO is a good candidate because it contains the metadata including: inputs that cause the vulnerability, patches that fix the issue, and the ability to compile and further execute the pre-patch and post-patch code.
 
-Google [OSS-Fuzz](https://google.github.io/oss-fuzz/) is a comprehensive open source dataset, containing details of security vulnerability, including how they were triggered, and how they were patched. Google provides a good tutorial on Fuzzing and how to use [libFuzz](https://github.com/google/fuzzing/blob/master/tutorial/libFuzzerTutorial.md).
+Google [OSS-Fuzz](https://google.github.io/oss-fuzz/) is a comprehensive open source dataset, containing details of security vulnerability, including how they were triggered, and how they were patched. OSS-Fuzz is mostly pure text-based, and it updates the new commits every 24hr. A vulnerability is considered "fixed" if the new commit no longer triggers vulnerability by the PoC, and that new commit is called a "patch commit." Despite the fact that OSS-Fuzz is widely used and well structured, it still contains huge amount of wrong fixes by incorrectly labelling a commit of adding just a text configuraiton file as a successful fix of an underlying memory issue. Human inspections are desirable while curating the datasets originated from OSS-Fuzz. Google provides a good tutorial on Fuzzing and how to use [libFuzz](https://github.com/google/fuzzing/blob/master/tutorial/libFuzzerTutorial.md).
 
 
 ## Dataset Preparation
+
+Input: a text description of a historically found vulnerability and the corresponding codebase before the vulnerability gets patched. The description includes approximate location, type, and root cause.
+
+Level 0 Inputs: just pre-patched codespace without specified descriptions of vulnerabilities.
+
+Level 1 Inputs: code + descriptions.
+
+Level 2 Inputs: the crash stack trace from executing the ground truth PoC on the pre-patch program. This trace, detailing the name, source file, and line number of each called function, guides the agent in locating the target vulnerability.
+
+Level 3 Inputs: Level 2 + patch in the diff format and the post-patch codebase.
