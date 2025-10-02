@@ -50,6 +50,7 @@ const sidebars = {
       label: 'Experiments',
       items: [
         'experiments/overview',
+        'experiments/input-dataset',
         'experiments/baseline-comparisons',
         'experiments/ablation-studies',
         'experiments/reproduction-guide',
