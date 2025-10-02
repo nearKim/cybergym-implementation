@@ -20,7 +20,11 @@ const sidebars = {
       items: [
         'getting-started/introduction',
         'getting-started/installation',
-        'getting-started/quick-start',
+        {
+          type: 'category',
+          label: 'Quick-Start',
+          items: ['getting-started/quick-start/google-Colab'],
+        },
         'getting-started/configuration',
       ],
     },

@@ -48,7 +48,8 @@ const config = {
         title: 'CyberGym',
         logo: {
           alt: 'CyberGym Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.avif',
+          srcDark: 'img/logo-invert.avif',
         },
         items: [
           {
