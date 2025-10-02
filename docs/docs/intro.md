@@ -13,7 +13,7 @@ Welcome to **CyberGym** - a competitive multi-agent reinforcement learning frame
 ### 🚀 Getting Started
 - [Introduction](/getting-started/introduction) - Overview of CyberGym
 - [Installation](/getting-started/installation) - Set up CyberGym in your environment
-- [Quick Start](/getting-started/quick-start) - Run your first experiment
+- [Quick Start (Google Colab)](/getting-started/quick-start/google-Colab) - Run your first experiment
 - [Configuration](/getting-started/configuration) - Customize your setup
 
 ### 📚 Theory
@@ -31,6 +31,7 @@ Welcome to **CyberGym** - a competitive multi-agent reinforcement learning frame
 
 ### 🧪 Experiments
 - [Overview](/experiments/overview) - Experimental setup
+- [Input Dataset](/experiments/input-dataset) - Dataset configuration
 - [Baseline Comparisons](/experiments/baseline-comparisons) - Performance benchmarks
 - [Ablation Studies](/experiments/ablation-studies) - Component analysis
 - [Reproduction Guide](/experiments/reproduction-guide) - Reproduce paper results
