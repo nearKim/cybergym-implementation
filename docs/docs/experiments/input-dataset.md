@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# Input Dataset: OSS-Fuzz
+# Input Dataset
 
 Quality of PoC generation is an acceptable and important metric to use to evaluate the cybersecurity capabilities of AI agents on challenging real-world problems.
 
