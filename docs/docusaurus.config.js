@@ -29,6 +29,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/', // This makes docs the root
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/your-org/cybergym/tree/main/docs/',
         },
@@ -73,11 +74,11 @@ const config = {
             items: [
               {
                 label: 'Getting Started',
-                to: 'docs/getting-started/introduction',
+                to: '/getting-started/introduction',
               },
               {
                 label: 'API Reference',
-                to: 'docs/api/overview',
+                to: '/api/overview',
               },
             ],
           },
@@ -90,7 +91,7 @@ const config = {
               },
               {
                 label: 'Experiments',
-                to: 'docs/experiments/overview',
+                to: '/experiments/overview',
               },
             ],
           },
