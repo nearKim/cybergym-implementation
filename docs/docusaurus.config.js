@@ -6,8 +6,9 @@ try {
   darkCodeTheme = themes.dracula;
 } catch (e) {
   // Fallback for older versions or if themes are not available
-  lightCodeTheme = require('prism-react-renderer').defaultProps?.theme;
-  darkCodeTheme = require('prism-react-renderer').defaultProps?.theme;
+  const prismReactRenderer = require('prism-react-renderer');
+  lightCodeTheme = prismReactRenderer.themes.github;
+  darkCodeTheme = prismReactRenderer.themes.dracula;
 }
 
 /** @type {import('@docusaurus/types').Config} */
