@@ -1,12 +1,15 @@
 // @ts-check
 let lightCodeTheme, darkCodeTheme;
-
-const {themes} = require('prism-react-renderer');
-if (themes && themes.github) {
+try {
+  const {themes} = require('prism-react-renderer');
   lightCodeTheme = themes.github;
   darkCodeTheme = themes.dracula;
-} else {
-  throw new Error('Themes not found in new API');
+} catch (e) {
+  // Fallback for older versions or if themes are not available
+  // @ts-ignore
+  lightCodeTheme = require('prism-react-renderer').defaultProps?.theme;
+  // @ts-ignore
+  darkCodeTheme = require('prism-react-renderer').defaultProps?.theme;
 }
 
 /** @type {import('@docusaurus/types').Config} */
