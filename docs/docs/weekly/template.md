@@ -1,0 +1,87 @@
+# Weekly Research Sync  
+**Date:** 2025-10-03  
+**Attendees:** Caroline Cahill, In Keun Kim, Song Li  
+
+---
+
+## 1. Summary
+**Current Status:** 🟢 On Track / 🟡 Minor Obstacles / 🔴 Blocked  
+
+🟢*We successfully created and deployed an online document for the future projects.*
+
+---
+
+## 2. Key Accomplishments This Week
+- Deployed a useful online document 
+- [Accomplishment 2]  
+- [Accomplishment 3]  
+
+---
+
+## 3. Individual Updates
+
+### [Caroline Cahill]  
+**Progress**  
+- [e.g., Implemented the data augmentation algorithm described in paper X.]  
+- [e.g., Wrote the first draft of the Introduction section (approx. 500 words).]  
+
+**Plans for Next Week**  
+- [e.g., Run experiments A and B on the new dataset.]  
+- [e.g., Find and summarize 3–5 more papers for the related work section.]  
+
+**Blockers / Needs**  
+- [e.g., Need access to the high-performance computing cluster to run experiments.]
+
+---
+
+
+### [In Keun Kim]
+**Progress**  
+- [...]  
+
+**Plans for Next Week**  
+- [...]  
+
+**Blockers / Needs**  
+- [...]  
+
+
+---
+
+### [Song Li]  
+**Progress**  
+- Working on the Colab notebook page for the CyberGym.  
+
+**Plans for Next Week**  
+- Finish benchmarking the performance of different LLMs either on the Colab or university servers. 
+
+**Blockers / Needs**  
+- Waiting for the access to the university GPU servers. CyberGym HuggingFace datasets are too large to be usefully processed on Colab.
+
+---
+
+## 4. Blockers / Challenges 
+- Waiting for the access to the university GPU servers.
+
+---
+
+## 5. Goals for Next Week
+- **Primary Goal:** Deliver benchmarks on the online document. 
+- **Secondary Goal:** Report the findings of CyberGym.
+
+---
+
+## 6. Discussion Points
+- [Topic 1: e.g., Brainstorming ideas for a new visualization for Figure 2.]  
+- [Topic 2: e.g., Discussing the surprising results from Experiment A.]   
+
+---
+
+## 7. Action Items
+- [ ] [Action Item] — **Owner:** [Name], **Due:** YYYY-MM-DD  
+  *Example: Request GPU cluster access for the team — Owner: Advisor, Due: 2025-10-06*  
+
+- [ ] [Action Item] — **Owner:** [Name], **Due:** YYYY-MM-DD  
+  *Example: Pair-program to debug the data loading script — Owner: Student 2 & Student 1, Due: 2025-10-07*  
+
+---

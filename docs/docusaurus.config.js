@@ -54,10 +54,115 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            type: 'dropdown',
+            label: 'Weekly Reports',
             position: 'left',
-            label: 'Documentation',
+            items: [
+              {
+                label: 'Template',
+                to: '/weekly/template',
+              },
+            ],
+          },
+          {
+            type: 'dropdown',
+            label: 'Getting Started',
+            position: 'left',
+            items: [
+              {
+                label: 'Introduction',
+                to: '/getting-started/introduction',
+              },
+              {
+                label: 'Installation',
+                to: '/getting-started/installation',
+              },
+              {
+                label: 'Quick Start (Colab)',
+                to: '/getting-started/quick-start/google-Colab',
+              },
+              {
+                label: 'Configuration',
+                to: '/getting-started/configuration',
+              },
+            ],
+          },
+          {
+            type: 'dropdown',
+            label: 'Theory',
+            position: 'left',
+            items: [
+              {
+                label: 'Overview',
+                to: '/theory/overview',
+              },
+              {
+                label: 'Adversarial Learning',
+                to: '/theory/adversarial-learning',
+              },
+              {
+                label: 'Opponent Synthesis',
+                to: '/theory/opponent-synthesis',
+              },
+              {
+                label: 'Cybersecurity Context',
+                to: '/theory/cybersecurity-context',
+              },
+            ],
+          },
+          {
+            type: 'dropdown',
+            label: 'API Reference',
+            position: 'left',
+            items: [
+              {
+                label: 'Overview',
+                to: '/api/overview',
+              },
+              {
+                label: 'Environments',
+                to: '/api/environments',
+              },
+              {
+                label: 'Agents',
+                to: '/api/agents',
+              },
+              {
+                label: 'Models',
+                to: '/api/models',
+              },
+              {
+                label: 'Training',
+                to: '/api/training',
+              },
+            ],
+          },
+          {
+            type: 'dropdown',
+            label: 'Experiments',
+            position: 'left',
+            items: [
+              {
+                label: 'Overview',
+                to: '/experiments/overview',
+              },
+              {
+                label: 'Input Dataset',
+                to: '/experiments/input-dataset',
+              },
+              {
+                label: 'Baseline Comparisons',
+                to: '/experiments/baseline-comparisons',
+              },
+              {
+                label: 'Ablation Studies',
+                to: '/experiments/ablation-studies',
+              },
+              {
+                label: 'Reproduction Guide',
+                to: '/experiments/reproduction-guide',
+              },
+            ],
           },
           {
             href: 'https://github.com/nearKim/cybergym-implementation',
@@ -106,6 +211,12 @@ const config = {
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} CyberGym Project. Built with Docusaurus.`,
+      },
+      docs: {
+        sidebar: {
+          hideable: true,
+          autoCollapseCategories: false,
+        },
       },
       prism: {
         theme: lightCodeTheme,
