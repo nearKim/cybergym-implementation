@@ -1,7 +1,15 @@
 // @ts-check
-const {themes} = require('prism-react-renderer');
-const lightCodeTheme = themes.github;
-const darkCodeTheme = themes.dracula;
+let lightCodeTheme, darkCodeTheme;
+try {
+  const {themes} = require('prism-react-renderer');
+  lightCodeTheme = themes.github;
+  darkCodeTheme = themes.dracula;
+} catch (e) {
+  // Fallback for older versions or if themes are not available
+  const prismReactRenderer = require('prism-react-renderer');
+  lightCodeTheme = prismReactRenderer.themes.github;
+  darkCodeTheme = prismReactRenderer.themes.dracula;
+}
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -59,9 +67,10 @@ const config = {
             position: 'left',
             items: [
               {
-                label: 'Template',
-                to: '/weekly/template',
+                label: 'Week 1 (2025-10-03)',
+                to: '/weekly/week1-2025-10-03',
               },
+              // Add more weekly reports here
             ],
           },
           {
