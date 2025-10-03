@@ -16,6 +16,14 @@ const sidebars = {
   tutorialSidebar: [
     {
       type: 'category',
+      label: 'Weekly Reports',
+      items: [
+        'weekly/template',
+        // Add more weekly reports here as they are created
+      ],
+    },
+    {
+      type: 'category',
       label: 'Getting Started',
       items: [
         'getting-started/introduction',
