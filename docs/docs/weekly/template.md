@@ -1,5 +1,5 @@
 # Weekly Research Sync  
-**Date:** YYYY-MM-DD  
+**Date:** 2025-10-03  
 **Attendees:** Caroline Cahill, In Keun Kim, Song Li  
 
 ---
@@ -7,13 +7,12 @@
 ## 1. Summary
 **Current Status:** 🟢 On Track / 🟡 Minor Obstacles / 🔴 Blocked  
 
-*A brief, one-sentence summary of the project’s state.*  
-Example: *We successfully completed the initial data processing pipeline and are now ready to run the baseline models.*
+🟢*We successfully created and deployed an online document for the future projects.*
 
 ---
 
 ## 2. Key Accomplishments This Week
-- [Accomplishment 1]  
+- Deployed a useful online document 
 - [Accomplishment 2]  
 - [Accomplishment 3]  
 
@@ -51,24 +50,24 @@ Example: *We successfully completed the initial data processing pipeline and are
 
 ### [Song Li]  
 **Progress**  
-- [...]  
+- Working on the Colab notebook page for the CyberGym.  
 
 **Plans for Next Week**  
-- [...]  
+- Finish benchmarking the performance of different LLMs either on the Colab or university servers. 
 
 **Blockers / Needs**  
-- [...]  
+- Waiting for the access to the university GPU servers. CyberGym HuggingFace datasets are too large to be usefully processed on Colab.
 
 ---
 
 ## 4. Blockers / Challenges 
-- [e.g., We are having trouble getting a clear definition of metric Y from the original paper's authors.]  
+- Waiting for the access to the university GPU servers.
 
 ---
 
 ## 5. Goals for Next Week
-- **Primary Goal:** [e.g., Obtain and analyze the first set of results from our proposed model.]  
-- **Secondary Goal:** [e.g., Complete the first full draft of the Introduction and Related Work sections.]  
+- **Primary Goal:** Deliver benchmarks on the online document. 
+- **Secondary Goal:** Report the findings of CyberGym.
 
 ---
 
