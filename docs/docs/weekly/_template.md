@@ -7,7 +7,7 @@
 ## 1. Summary
 **Current Status:** 🟢 On Track / 🟡 Minor Obstacles / 🔴 Blocked  
 
-*A brief, one-sentence summary of the project's state.*  
+*A brief, one-sentence summary of the project’s state.*  
 Example: *We successfully completed the initial data processing pipeline and are now ready to run the baseline models.*
 
 ---

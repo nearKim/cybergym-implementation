@@ -6,7 +6,9 @@ try {
   darkCodeTheme = themes.dracula;
 } catch (e) {
   // Fallback for older versions or if themes are not available
+  // @ts-ignore
   lightCodeTheme = require('prism-react-renderer').defaultProps?.theme;
+  // @ts-ignore
   darkCodeTheme = require('prism-react-renderer').defaultProps?.theme;
 }
 
