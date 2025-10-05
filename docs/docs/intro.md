@@ -14,7 +14,7 @@ Welcome to **CyberGym-Implementation** - a realistic, large-scale benchmark for 
 ### 🚀 Getting Started
 - [Introduction](/getting-started/introduction) - Overview of CyberGym
 - [Installation](/getting-started/installation) - Set up CyberGym in your environment
-- [Quick Start (Google Colab)](/getting-started/quick-start/google-Colab) - Run your first experiment
+- [Quick Start](/getting-started/quick-start) - Run your first experiment
 - [Configuration](/getting-started/configuration) - Customize your setup
 
 ### 📚 Theory
