@@ -88,8 +88,8 @@ const config = {
                 to: '/getting-started/installation',
               },
               {
-                label: 'Quick Start (Colab)',
-                to: '/getting-started/quick-start/google-Colab',
+                label: 'Quick Start (Local Machine)',
+                to: '/getting-started/quick-start/local_machine',
               },
               {
                 label: 'Configuration',
