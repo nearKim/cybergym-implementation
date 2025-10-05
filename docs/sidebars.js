@@ -33,7 +33,7 @@ const sidebars = {
         {
           type: 'category',
           label: 'Quick-Start',
-          items: ['getting-started/quick-start/google-Colab'],
+          items: ['getting-started/quick-start/local_machine'],
         },
         'getting-started/configuration',
       ],
