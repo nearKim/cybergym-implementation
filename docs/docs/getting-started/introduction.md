@@ -36,7 +36,7 @@ Multiple agent populations evolve simultaneously, creating diverse and robust st
 To get started with CyberGym:
 
 1. [Install](./installation) the framework and dependencies
-2. Follow the [Quick Start](./quick-start/google-Colab) guide to run your first experiment on Google Colab.
+2. Follow the [Quick Start](./quick-start/local_machine) guide to run your first experiment on your local machine.
 3. Learn about [Configuration](./configuration) options to customize your experiments
 
 ## Architecture
