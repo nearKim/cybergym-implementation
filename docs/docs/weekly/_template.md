@@ -1,6 +1,8 @@
-# Weekly Research Sync  
-**Date:** YYYY-MM-DD  
-**Attendees:** Caroline Cahill, In Keun Kim, Song Li  
+# Research Sync YYYY-MM-DD
+
+**Attendees:** Caroline Cahill, In Keun Kim, Song Li
+
+**Date:** YYYY-MM-DD
 
 ---
 
