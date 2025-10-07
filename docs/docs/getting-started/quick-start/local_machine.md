@@ -10,7 +10,8 @@ Learn how to use CyberGym on your local machine, please finish the [installation
 ### Start Docker
 1. Open up the Docker Desktop application and ensure that it is running.
 2. We need two seperate terminals for the server and the client. Open up two terminal windows.
-3. On both terminals, please use the following command to use the proper docker context:
+3. Activate your MiniCondas.
+4. On both terminals, please use the following command to use the proper docker context:
 ```shell
 docker context use desktop-linux
 docker start
