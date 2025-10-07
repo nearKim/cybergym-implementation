@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Theory Overview
+# Overview
 
 CyberGym is a large-scale framework created to evaluate the cybersecurity capabilities of AI agents by evaluating how well agents reproduce vulnerabilities in real-world software projects. Agents are required to produce Proof of Concept tests to trigger target vulnerabilities.
 
@@ -23,9 +23,9 @@ Existing benchmarks to assess how effective the cybersecurity capabilities of LL
 ### CyberGym
 CyberGym builds upon these limitations
 1. Explicitly tests agents vulnerability reproduction capabilities on real-world vulnerabilities
-Goal: Agent must generate a PoC that triggers the vulnerability in the pre-patch version of the program, solve at the repository level
-Post-patch executable allows for discovery
-- Buggy patch: the PoC triggers the same vulnerability post-patch
-- New vulnerability: the PoC triggers a new vulnerability
-Modular: ensures scalability & adaptability in the future
-Four difficulty levels provide insights into how successful agents could be with enough input information
+2. Goal: Agent must generate a PoC that triggers the vulnerability in the pre-patch version of the program, solve at the repository level
+3. Post-patch executable allows for discovery
+    - Buggy patch: the PoC triggers the same vulnerability post-patch
+    - New vulnerability: the PoC triggers a new vulnerability
+4. Modular: ensures scalability & adaptability in the future
+5. Four difficulty levels provide insights into how successful agents could be with enough input information
