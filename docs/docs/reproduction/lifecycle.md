@@ -26,7 +26,7 @@ The helper performs the following steps:
 2. Creates the log, artifact, and scratch directories if they are missing.
 3. Boots the FastAPI app on `SERVER_IP:SERVER_PORT` (default `0.0.0.0:8666`).
 
-Leave this terminal open. Visit <http://localhost:8666/docs> to inspect the automatically generated OpenAPI schema.
+Leave this terminal open. Visit [http://localhost:8666/docs](http://localhost:8666/docs) to inspect the automatically generated OpenAPI schema.
 
 
 ## 2. Generate Tasks & Submit Sample PoCs

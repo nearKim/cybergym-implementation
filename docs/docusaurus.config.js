@@ -80,20 +80,20 @@ const config = {
             position: 'left',
             items: [
               {
-                label: 'Introduction',
-                to: '/getting-started/introduction',
+                label: 'Overview',
+                to: '/reproduction/overview',
               },
               {
-                label: 'Installation',
-                to: '/getting-started/installation',
-              },
-              {
-                label: 'Quick Start (Local Machine)',
-                to: '/getting-started/quick-start/local_machine',
+                label: 'Environment Setup',
+                to: '/reproduction/environment',
               },
               {
                 label: 'Configuration',
-                to: '/getting-started/configuration',
+                to: '/reproduction/configuration',
+              },
+              {
+                label: 'Lifecycle Execution',
+                to: '/reproduction/lifecycle',
               },
             ],
           },
@@ -189,7 +189,7 @@ const config = {
             items: [
               {
                 label: 'Getting Started',
-                to: '/getting-started/introduction',
+                to: '/reproduction/overview',
               },
               {
                 label: 'API Reference',
