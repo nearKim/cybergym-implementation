@@ -6,16 +6,17 @@ sidebar_position: 1
 
 # Intro
 
-Welcome to **CyberGym-Implementation** - a realistic, large-scale benchmark for evaluating AI agents' cybersecurity capabilities using real-world vulnerabilities.
+Welcome to **CyberGym-Implementation**—a reproduction-focused companion to the upstream [`nearKim/cybergym`](https://github.com/nearKim/cybergym/tree/develop) project. These docs prioritise deterministic rebuilds of the benchmark so you can validate research claims, port the stack to new infrastructure, and run end-to-end experiments with confidence.
 
+## Quick Navigation
 
-## Quick Navigation (WIP)
-
-### 🚀 Getting Started
-- [Introduction](/getting-started/introduction) - Overview of CyberGym
-- [Installation](/getting-started/installation) - Set up CyberGym in your environment
-- [Quick Start](/getting-started/quick-start/local_machine) - Run your first experiment
-- [Configuration](/getting-started/configuration) - Customize your setup
+### 🚀 Reproduction Playbook
+- [Overview](/reproduction/overview) – Lifecycle map and reading order.
+- [Environment Provisioning](/reproduction/environment) – Prepare operating system dependencies and a Python toolchain.
+- [Workspace Bootstrapping](/reproduction/workspace) – Clone the upstream repo and install editable dependencies.
+- [Dataset Management](/reproduction/data-management) – Fetch ARVOS and OSS-Fuzz artefacts.
+- [Lifecycle Execution](/reproduction/lifecycle) – Exercise the full pipeline locally.
+- [Verification & Audit](/reproduction/verification) – Replay PoCs and capture artefacts.
 
 ### 📚 Theory
 - [Overview](/theory/overview) - Theoretical foundations

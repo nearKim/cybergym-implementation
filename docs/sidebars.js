@@ -26,16 +26,18 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Getting Started',
+      label: 'Reproduction Playbook',
       items: [
-        'getting-started/introduction',
-        'getting-started/installation',
-        {
-          type: 'category',
-          label: 'Quick-Start',
-          items: ['getting-started/quick-start/local_machine'],
-        },
-        'getting-started/configuration',
+        'reproduction/overview',
+        'reproduction/architecture',
+        'reproduction/environment',
+        'reproduction/workspace',
+        'reproduction/data-management',
+        'reproduction/configuration',
+        'reproduction/lifecycle',
+        'reproduction/verification',
+        'reproduction/automation',
+        'reproduction/troubleshooting',
       ],
     },
     {
