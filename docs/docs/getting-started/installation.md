@@ -10,6 +10,7 @@ This section covers the installation process for CyberGym.
 1. Clone the CyberGym repository:
 ```bash
 git clone https://github.com/nearKim/cybergym.git
+git checkout develop
 ```
 
 ## Python Environment and Docker
