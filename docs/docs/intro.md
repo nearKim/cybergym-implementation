@@ -14,7 +14,8 @@ CyberGym is a benchmark designed to evaluate AI agents' ability to identify and 
 ## 🚀 Quick Start
 
 1. **[Install CyberGym](/getting-started/installation)** - Set up your environment
-2. **[Run locally](/getting-started/quick-start/local_machine)** - Start your first experiment
+2. **[Quick Start - Basic](/getting-started/quick-start/local_machine)** - Start your first experiment
+3. **[Quick Start - Detailed](/getting-started/quick-start/local_machine2)** - Comprehensive setup guide
 
 ## 📚 Documentation
 

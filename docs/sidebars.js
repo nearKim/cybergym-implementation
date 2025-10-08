@@ -34,7 +34,10 @@ const sidebars = {
         {
           type: 'category',
           label: 'Quick-Start',
-          items: ['getting-started/quick-start/local_machine'],
+          items: [
+            'getting-started/quick-start/local_machine',
+            'getting-started/quick-start/local_machine2',
+          ],
         },
       ],
     },

@@ -1,58 +1,166 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
-# Installation
+# Installation Guide
 
-This section covers the installation process for CyberGym.
+## Overview
 
-## Clone the Repository
-1. Clone the CyberGym repository:
+This guide covers the installation process for CyberGym using an improved fork that addresses environment compatibility issues found in the original repository.
+
+### Why Use the Fork?
+
+The original CyberGym repository ([sunblaze-ucb/cybergym](https://github.com/sunblaze-ucb/cybergym)) can encounter issues with:
+- Server failures in certain local environments
+- Script execution failures depending on terminal configuration
+- Environment-specific compatibility problems
+
+To address these issues, we maintain an enhanced fork at [nearKim/cybergym](https://github.com/nearKim/cybergym.git) that includes:
+- Helper scripts for server management in the `helpers/` directory
+- Improved task generation and validation logic
+- Better cross-environment compatibility
+
+## Prerequisites
+
+Before installing CyberGym, ensure you have the following:
+
+### 1. Docker
+- **Docker Desktop** is required (Docker daemon must be running)
+- Download from [Docker's official website](https://www.docker.com/products/docker-desktop/)
+- **Note**: Colima users should refer to the [Troubleshooting](#troubleshooting) section for additional configuration
+
+### 2. Conda
+- Install [Miniconda](https://www.anaconda.com/docs/getting-started/miniconda/install) or Anaconda
+- Required for managing Python virtual environments
+
+### 3. Python
+- Python version **≥ 3.12** is required
+- Will be installed via Conda in the setup process
+
+### 4. 7z
+- **7z** is required for downloading the OSS-Fuzz dataset
+
+## Installation Steps
+
+### Step 1: Clone the Repository
+
+Clone the enhanced CyberGym fork and switch to the `develop` branch:
+
 ```bash
 git clone https://github.com/nearKim/cybergym.git
+cd cybergym
 git checkout develop
 ```
-2. Right now you should have a repository called `cybergym`. It's recommended to work from the `develop` branch. It's beneficial to save the environment variable of cybergym root directory:
 
-Bash
+### Step 2: Set Environment Variables
+
+Set the CyberGym root directory as an environment variable for easier configuration:
+
+**Bash/Zsh:**
 ```bash
-cd cybergym
-CYBERGYM_ROOT=$(pwd)
+export CYBERGYM_ROOT=$(pwd)
 ```
 
-Fish
+**Fish:**
 ```sh
-cd cybergym
-set CYBERGYM_ROOT (pwd)
+set -x CYBERGYM_ROOT (pwd)
 ```
 
-## Python Environment and Docker
-### Virtual Environment Setup
-1. It is recommended to use a [Miniconda](https://www.anaconda.com/docs/getting-started/miniconda/install) virtual environment to manage dependencies. You can create a virtual environment using the following command:
+### Step 3: Create Virtual Environment
+
+Create and activate a Conda virtual environment with Python 3.12:
+
 ```bash
-conda create -n cybergym 'python==3.12' 
-```
-2. Activate the virtual environment:
-```bash
+# Create & Activate environment
+conda create -n cybergym python=3.12
 conda activate cybergym
-```
-3. Verify that you are using `pip` from the virtual environment:
-```bash
-which pip
-```
-4. At the root directory of the cybergym repository, install the required Python packages using pip:
-```bash
-pip install -e '.[dev,server]'
+
+# Verify pip is from the virtual environment
+which pip  # Should show path within conda env
 ```
 
-### Docker Installation
-1. Please use a Docker Desktop. Note that `colima` is not properly supported.
-2. Install Docker from [Docker's official website](https://www.docker.com/products/docker-desktop/)
+### Step 4: Install Dependencies
 
-## Download Server Data
-1. Download the subset of server data required for CyberGym. You can use the following command:
+Install CyberGym with all required dependencies:
+
+```bash
+# Install in development mode with all extras
+pip install -e '.[dev,server,custom]'
+```
+
+This installs:
+- Core CyberGym package in editable mode
+- Development tools and dependencies
+- Server components for running experiments
+- Custom extensions and utilities
+
+### Step 5: Docker Setup
+
+#### Docker Desktop Installation
+
+1. Install Docker Desktop from [Docker's official website](https://www.docker.com/products/docker-desktop/)
+2. Start Docker Desktop and ensure it's running
+3. Verify Docker installation:
+
+```bash
+# Check Docker is running
+docker info
+
+# Test Docker with hello-world
+docker run hello-world
+```
+
+#### Docker Context Configuration
+
+[//]: # TODO: Add Colima setup()
+
+For Docker Desktop users:
+```bash
+# Set Docker Desktop context
+docker context use desktop-linux
+
+# Verify context
+docker context ls
+```
+
+### Step 6: Download Server Data
+
+Download the required OSS-Fuzz dataset for CyberGym experiments:
+
 ```bash
 python scripts/server_data/download_subset.py
 wget https://huggingface.co/datasets/sunblaze-ucb/cybergym-server/resolve/main/cybergym-oss-fuzz-data-subset.7z
 7z x cybergym-oss-fuzz-data-subset.7z
 ```
+
+#### Option 3: Using Python Script
+```bash
+# Alternative download script
+python scripts/server_data/download_subset.py
+```
+
+### Step 7: Verify Installation
+
+Run verification checks to ensure everything is properly installed:
+
+```bash
+# Check Python version
+python --version  # Should be ≥3.12
+
+# Check CyberGym installation
+python -c "import cybergym; print(cybergym.__version__)"
+
+# Check Docker
+docker --version
+docker ps  # Should not show permission errors
+
+# Verify data download
+ls -la $CYBERGYM_ROOT/oss-fuzz-data/  # Should contain dataset files
+```
+
+## Next Steps
+
+After a successful installation:
+1. Continue to [Local Machine Setup](./quick-start/local_machine) for configuration and running your first experiment
+2. Review [Theory Overview](/theory/overview) for understanding the framework
+3. Check [Input Dataset](/experiments/input-dataset) for dataset details

@@ -57,8 +57,12 @@ const config = {
                 to: "/getting-started/installation",
               },
               {
-                label: "Quick Start (Local Machine)",
+                label: "Quick Start (Basic)",
                 to: "/getting-started/quick-start/local_machine",
+              },
+              {
+                label: "Quick Start (Detailed)",
+                to: "/getting-started/quick-start/local_machine2",
               },
             ],
           },

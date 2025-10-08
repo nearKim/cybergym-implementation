@@ -1,5 +1,7 @@
 ---
 sidebar_position: 1
+title: Basic Setup Guide
+sidebar_label: Basic Setup
 ---
 
 # Starting on a Local Machine
