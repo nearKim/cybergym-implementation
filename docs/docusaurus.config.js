@@ -1,4 +1,3 @@
-/** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "CyberGym",
   tagline:
@@ -22,7 +21,6 @@ const config = {
   presets: [
     [
       "classic",
-      /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
           routeBasePath: "/", // This makes docs the root
@@ -51,25 +49,9 @@ const config = {
         items: [
           {
             type: "dropdown",
-            label: "Weekly Reports",
-            position: "left",
-            items: [
-              {
-                label: "Week 1 (2025-10-03)",
-                to: "/weekly/week1-2025-10-03",
-              },
-              // Add more weekly reports here
-            ],
-          },
-          {
-            type: "dropdown",
             label: "Getting Started",
             position: "left",
             items: [
-              {
-                label: "Introduction",
-                to: "/getting-started/introduction",
-              },
               {
                 label: "Installation",
                 to: "/getting-started/installation",
@@ -77,10 +59,6 @@ const config = {
               {
                 label: "Quick Start (Local Machine)",
                 to: "/getting-started/quick-start/local_machine",
-              },
-              {
-                label: "Configuration",
-                to: "/getting-started/configuration",
               },
             ],
           },
@@ -95,69 +73,19 @@ const config = {
               },
               {
                 label: "Method",
+                to: "/theory/method",
+              },
+              {
+                label: "Adversarial Learning",
                 to: "/theory/adversarial-learning",
               },
               {
-                label: "Evaluation and Findings",
+                label: "Opponent Synthesis",
                 to: "/theory/opponent-synthesis",
               },
               {
                 label: "Cybersecurity Context",
                 to: "/theory/cybersecurity-context",
-              },
-            ],
-          },
-          {
-            type: "dropdown",
-            label: "API Reference",
-            position: "left",
-            items: [
-              {
-                label: "Overview",
-                to: "/api/overview",
-              },
-              {
-                label: "Environments",
-                to: "/api/environments",
-              },
-              {
-                label: "Agents",
-                to: "/api/agents",
-              },
-              {
-                label: "Models",
-                to: "/api/models",
-              },
-              {
-                label: "Training",
-                to: "/api/training",
-              },
-            ],
-          },
-          {
-            type: "dropdown",
-            label: "Experiments",
-            position: "left",
-            items: [
-              {
-                label: "Overview",
-                to: "/experiments/overview",
-              },
-              {
-                label: "Input Dataset",
-                to: "/experiments/input-dataset",
-              },
-              {
-                label: "Baseline Comparisons",
-                to: "/experiments/baseline-comparisons",
-              },
-              {
-                label: "Ablation Studies",
-                to: "/experiments/ablation-studies",
-              },
-              {
-                label: "Reproduction Guide",
-                to: "/experiments/reproduction-guide",
               },
             ],
           },
@@ -176,11 +104,7 @@ const config = {
             items: [
               {
                 label: "Getting Started",
-                to: "/getting-started/introduction",
-              },
-              {
-                label: "API Reference",
-                to: "/api/overview",
+                to: "/getting-started/installation",
               },
             ],
           },
@@ -190,10 +114,6 @@ const config = {
               {
                 label: "Paper",
                 href: "https://arxiv.org/pdf/2506.02548",
-              },
-              {
-                label: "Experiments",
-                to: "/experiments/overview",
               },
             ],
           },

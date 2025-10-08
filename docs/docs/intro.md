@@ -1,46 +1,34 @@
 ---
 slug: /
-title: Welcome to CyberGym Implementation
+title: CyberGym
 sidebar_position: 1
+hide_title: true
 ---
 
-# Intro
+# CyberGym
 
-Welcome to **CyberGym-Implementation** - a realistic, large-scale benchmark for evaluating AI agents' cybersecurity capabilities using real-world vulnerabilities.
+> A Realistic Large-Scale Benchmark for AI Cybersecurity Capabilities
 
+CyberGym is a benchmark designed to evaluate AI agents' ability to identify and exploit real-world cybersecurity vulnerabilities. Based on the research paper [arxiv.org/abs/2506.02548](https://arxiv.org/abs/2506.02548).
 
-## Quick Navigation (WIP)
+## 🚀 Quick Start
 
-### 🚀 Getting Started
-- [Introduction](/getting-started/introduction) - Overview of CyberGym
-- [Installation](/getting-started/installation) - Set up CyberGym in your environment
-- [Quick Start](/getting-started/quick-start/local_machine) - Run your first experiment
-- [Configuration](/getting-started/configuration) - Customize your setup
+1. **[Install CyberGym](/getting-started/installation)** - Set up your environment
+2. **[Run locally](/getting-started/quick-start/local_machine)** - Start your first experiment
 
-### 📚 Theory
-- [Overview](/theory/overview) - Theoretical foundations
-- [Adversarial Learning](/theory/adversarial-learning) - Core concepts
-- [Opponent Synthesis](/theory/opponent-synthesis) - Adaptive opponent generation
-- [Cybersecurity Context](/theory/cybersecurity-context) - Security applications
+## 📚 Documentation
 
-### 🔧 API Reference
-- [Overview](/api/overview) - API structure
-- [Environments](/api/environments) - Available environments
-- [Agents](/api/agents) - Agent implementations
-- [Models](/api/models) - Neural network architectures
-- [Training](/api/training) - Training utilities
+### Theory
+- **[Overview](/theory/overview)** - Framework overview and key contributions
+- **[Method](/theory/method)** - Technical approach and methodology
+- **[Adversarial Learning](/theory/adversarial-learning)** - Core adversarial concepts
+- **[Opponent Synthesis](/theory/opponent-synthesis)** - Adaptive opponent generation
+- **[Cybersecurity Context](/theory/cybersecurity-context)** - Security applications
 
-### 🧪 Experiments
-- [Overview](/experiments/overview) - Experimental setup
-- [Input Dataset](/experiments/input-dataset) - Dataset configuration
-- [Baseline Comparisons](/experiments/baseline-comparisons) - Performance benchmarks
-- [Ablation Studies](/experiments/ablation-studies) - Component analysis
-- [Reproduction Guide](/experiments/reproduction-guide) - Reproduce paper results
+### Weekly Reports
+- **[Latest Report](/weekly/week1-2025-10-03)** - Track project progress
 
-## Research
+## 🔗 Links
 
-This implementation is based on the [CyberGym benchmark paper](https://arxiv.org/abs/2506.02548). Check the original research for detailed methodology and evaluation metrics.
-
-## GitHub
-
-Visit our [GitHub repository](https://github.com/nearKim/cybergym-implementation) for the latest updates and contributions.
+- [GitHub Repository](https://github.com/nearKim/cybergym-implementation)
+- [Research Paper](https://arxiv.org/abs/2506.02548)
