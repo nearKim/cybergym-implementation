@@ -12,6 +12,19 @@ This section covers the installation process for CyberGym.
 git clone https://github.com/nearKim/cybergym.git
 git checkout develop
 ```
+2. Right now you should have a repository called `cybergym`. It's recommended to work from the `develop` branch. It's beneficial to save the environment variable of cybergym root directory:
+
+Bash
+```bash
+cd cybergym
+CYBERGYM_ROOT=$(pwd)
+```
+
+Fish
+```sh
+cd cybergym
+set CYBERGYM_ROOT (pwd)
+```
 
 ## Python Environment and Docker
 ### Virtual Environment Setup

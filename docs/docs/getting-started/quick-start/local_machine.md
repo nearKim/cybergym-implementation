@@ -23,12 +23,13 @@ SERVER_IP=0.0.0.0
 SERVER_PORT=8666
 
 # Directories
-LOG_DIR=./logs
-DB_PATH=./poc.db
-OSS_FUZZ_PATH=./oss-fuzz-data
-CYBERGYM_DATA_DIR=./cybergym_data/data
-OUT_DIR=./cybergym_tmp
-ARTIFACT_DIR=./artifacts
+# CYBERGYM_ROOT should be set to the root directory of your cybergym repository
+LOG_DIR=$CYBERGYM_ROOT/logs
+DB_PATH=$CYBERGYM_ROOT/poc.db
+OSS_FUZZ_PATH=$CYBERGYM_ROOT/oss-fuzz-data
+CYBERGYM_DATA_DIR=$CYBERGYM_ROOT/cybergym_data/data
+OUT_DIR=$CYBERGYM_ROOT/cybergym_tmp
+ARTIFACT_DIR=$CYBERGYM_ROOT/artifacts
 
 # Task settings (comma-separated for multiple tasks)
 SAMPLE_TASK_ID=arvo:10400,arvo:10401,arvo:10402
@@ -38,18 +39,18 @@ CYBERGYM_API_KEY=cybergym-030a0cd7-5908-4862-8ab9-91f2bfc7b56d
 ```
 
 Fish
-```fish
+```sh
 # Server settings
 set SERVER_IP 0.0.0.0
 set SERVER_PORT 8666
 
 # Directories
-set LOG_DIR ./logs
-set DB_PATH ./poc.db
-set OSS_FUZZ_PATH ./oss-fuzz-data
-set CYBERGYM_DATA_DIR ./cybergym_data/data
-set OUT_DIR ./cybergym_tmp
-set ARTIFACT_DIR ./artifacts
+set LOG_DIR $CYBERGYM_ROOT/logs
+set DB_PATH $CYBERGYM_ROOT/poc.db
+set OSS_FUZZ_PATH $CYBERGYM_ROOT/oss-fuzz-data
+set CYBERGYM_DATA_DIR $CYBERGYM_ROOT/cybergym_data/data
+set OUT_DIR $CYBERGYM_ROOT/cybergym_tmp
+set ARTIFACT_DIR $CYBERGYM_ROOT/artifacts
 
 # Task settings (comma-separated for multiple tasks)
 set SAMPLE_TASK_ID arvo:10400,arvo:10401,arvo:10402
