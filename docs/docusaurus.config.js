@@ -1,36 +1,37 @@
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'CyberGym',
-  tagline: 'A Realistic Large-Scale Benchmark for AI Cybersecurity Capabilities',
-  favicon: 'img/favicon.ico',
+  title: "CyberGym",
+  tagline:
+    "A Realistic Large-Scale Benchmark for AI Cybersecurity Capabilities",
+  favicon: "img/favicon.ico",
 
-  url: 'https://nearkim.github.io',
-  baseUrl: '/cybergym-implementation/',
+  url: "https://nearkim.github.io",
+  baseUrl: "/cybergym-implementation/",
 
-  organizationName: 'nearKim', // GitHub org/user name
-  projectName: 'cybergym-implementation', // GitHub repo name
+  organizationName: "nearKim", // GitHub org/user name
+  projectName: "cybergym-implementation", // GitHub repo name
 
-  onBrokenLinks: 'warn',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: "warn",
+  onBrokenMarkdownLinks: "warn",
 
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: '/', // This makes docs the root
-          sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/your-org/cybergym/tree/main/docs/',
+          routeBasePath: "/", // This makes docs the root
+          sidebarPath: require.resolve("./sidebars.js"),
+          editUrl: "https://github.com/your-org/cybergym/tree/main/docs/",
         },
         blog: false,
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.css"),
         },
       }),
     ],
@@ -39,169 +40,169 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/cybergym-social-card.jpg',
+      image: "img/cybergym-social-card.jpg",
       navbar: {
-        title: 'CyberGym',
+        title: "CyberGym",
         logo: {
-          alt: 'CyberGym Logo',
-          src: 'img/logo.avif',
-          srcDark: 'img/logo-invert.avif',
+          alt: "CyberGym Logo",
+          src: "img/logo.avif",
+          srcDark: "img/logo-invert.avif",
         },
         items: [
           {
-            type: 'dropdown',
-            label: 'Weekly Reports',
-            position: 'left',
+            type: "dropdown",
+            label: "Weekly Reports",
+            position: "left",
             items: [
               {
-                label: 'Week 1 (2025-10-03)',
-                to: '/weekly/week1-2025-10-03',
+                label: "Week 1 (2025-10-03)",
+                to: "/weekly/week1-2025-10-03",
               },
               // Add more weekly reports here
             ],
           },
           {
-            type: 'dropdown',
-            label: 'Getting Started',
-            position: 'left',
+            type: "dropdown",
+            label: "Getting Started",
+            position: "left",
             items: [
               {
-                label: 'Introduction',
-                to: '/getting-started/introduction',
+                label: "Introduction",
+                to: "/getting-started/introduction",
               },
               {
-                label: 'Installation',
-                to: '/getting-started/installation',
+                label: "Installation",
+                to: "/getting-started/installation",
               },
               {
-                label: 'Quick Start (Local Machine)',
-                to: '/getting-started/quick-start/local_machine',
+                label: "Quick Start (Local Machine)",
+                to: "/getting-started/quick-start/local_machine",
               },
               {
-                label: 'Configuration',
-                to: '/getting-started/configuration',
+                label: "Configuration",
+                to: "/getting-started/configuration",
               },
             ],
           },
           {
-            type: 'dropdown',
-            label: 'Theory',
-            position: 'left',
+            type: "dropdown",
+            label: "Theory",
+            position: "left",
             items: [
               {
-                label: 'Overview',
-                to: '/theory/overview',
+                label: "Overview",
+                to: "/theory/overview",
               },
               {
-                label: 'Adversarial Learning',
-                to: '/theory/adversarial-learning',
+                label: "Method",
+                to: "/theory/adversarial-learning",
               },
               {
-                label: 'Opponent Synthesis',
-                to: '/theory/opponent-synthesis',
+                label: "Evaluation and Findings",
+                to: "/theory/opponent-synthesis",
               },
               {
-                label: 'Cybersecurity Context',
-                to: '/theory/cybersecurity-context',
+                label: "Cybersecurity Context",
+                to: "/theory/cybersecurity-context",
               },
             ],
           },
           {
-            type: 'dropdown',
-            label: 'API Reference',
-            position: 'left',
+            type: "dropdown",
+            label: "API Reference",
+            position: "left",
             items: [
               {
-                label: 'Overview',
-                to: '/api/overview',
+                label: "Overview",
+                to: "/api/overview",
               },
               {
-                label: 'Environments',
-                to: '/api/environments',
+                label: "Environments",
+                to: "/api/environments",
               },
               {
-                label: 'Agents',
-                to: '/api/agents',
+                label: "Agents",
+                to: "/api/agents",
               },
               {
-                label: 'Models',
-                to: '/api/models',
+                label: "Models",
+                to: "/api/models",
               },
               {
-                label: 'Training',
-                to: '/api/training',
+                label: "Training",
+                to: "/api/training",
               },
             ],
           },
           {
-            type: 'dropdown',
-            label: 'Experiments',
-            position: 'left',
+            type: "dropdown",
+            label: "Experiments",
+            position: "left",
             items: [
               {
-                label: 'Overview',
-                to: '/experiments/overview',
+                label: "Overview",
+                to: "/experiments/overview",
               },
               {
-                label: 'Input Dataset',
-                to: '/experiments/input-dataset',
+                label: "Input Dataset",
+                to: "/experiments/input-dataset",
               },
               {
-                label: 'Baseline Comparisons',
-                to: '/experiments/baseline-comparisons',
+                label: "Baseline Comparisons",
+                to: "/experiments/baseline-comparisons",
               },
               {
-                label: 'Ablation Studies',
-                to: '/experiments/ablation-studies',
+                label: "Ablation Studies",
+                to: "/experiments/ablation-studies",
               },
               {
-                label: 'Reproduction Guide',
-                to: '/experiments/reproduction-guide',
+                label: "Reproduction Guide",
+                to: "/experiments/reproduction-guide",
               },
             ],
           },
           {
-            href: 'https://github.com/nearKim/cybergym-implementation',
-            label: 'GitHub',
-            position: 'right',
+            href: "https://github.com/nearKim/cybergym-implementation",
+            label: "GitHub",
+            position: "right",
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Docs',
+            title: "Docs",
             items: [
               {
-                label: 'Getting Started',
-                to: '/getting-started/introduction',
+                label: "Getting Started",
+                to: "/getting-started/introduction",
               },
               {
-                label: 'API Reference',
-                to: '/api/overview',
+                label: "API Reference",
+                to: "/api/overview",
               },
             ],
           },
           {
-            title: 'Research',
+            title: "Research",
             items: [
               {
-                label: 'Paper',
-                href: 'https://arxiv.org/pdf/2506.02548',
+                label: "Paper",
+                href: "https://arxiv.org/pdf/2506.02548",
               },
               {
-                label: 'Experiments',
-                to: '/experiments/overview',
+                label: "Experiments",
+                to: "/experiments/overview",
               },
             ],
           },
           {
-            title: 'More',
+            title: "More",
             items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/nearKim/cybergym-implementation',
+                label: "GitHub",
+                href: "https://github.com/nearKim/cybergym-implementation",
               },
             ],
           },
