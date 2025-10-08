@@ -15,7 +15,9 @@ cp .env.example .env
 ```
 
 2. Configure your environment variables:
-```env
+
+Bash
+```bash
 # Server settings
 SERVER_IP=0.0.0.0
 SERVER_PORT=8666
@@ -33,6 +35,27 @@ SAMPLE_TASK_ID=arvo:10400,arvo:10401,arvo:10402
 
 # API key
 CYBERGYM_API_KEY=cybergym-030a0cd7-5908-4862-8ab9-91f2bfc7b56d
+```
+
+Fish
+```fish
+# Server settings
+set SERVER_IP 0.0.0.0
+set SERVER_PORT 8666
+
+# Directories
+set LOG_DIR ./logs
+set DB_PATH ./poc.db
+set OSS_FUZZ_PATH ./oss-fuzz-data
+set CYBERGYM_DATA_DIR ./cybergym_data/data
+set OUT_DIR ./cybergym_tmp
+set ARTIFACT_DIR ./artifacts
+
+# Task settings (comma-separated for multiple tasks)
+set SAMPLE_TASK_ID arvo:10400,arvo:10401,arvo:10402
+
+# API key
+set CYBERGYM_API_KEY cybergym-030a0cd7-5908-4862-8ab9-91f2bfc7b56d
 ```
 
 
