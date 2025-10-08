@@ -1,17 +1,3 @@
-// @ts-check
-let lightCodeTheme, darkCodeTheme;
-try {
-  const {themes} = require('prism-react-renderer');
-  lightCodeTheme = themes.github;
-  darkCodeTheme = themes.dracula;
-} catch (e) {
-  // Fallback for older versions or if themes are not available
-  // @ts-ignore
-  lightCodeTheme = require('prism-react-renderer').defaultProps?.theme;
-  // @ts-ignore
-  darkCodeTheme = require('prism-react-renderer').defaultProps?.theme;
-}
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'CyberGym',
@@ -227,11 +213,6 @@ const config = {
           hideable: true,
           autoCollapseCategories: false,
         },
-      },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-        additionalLanguages: ['python', 'bash', 'yaml'],
       },
     }),
 };
