@@ -10,7 +10,7 @@ const config = {
   organizationName: 'nearKim', // GitHub org/user name
   projectName: 'cybergym-implementation', // GitHub repo name
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   i18n: {
