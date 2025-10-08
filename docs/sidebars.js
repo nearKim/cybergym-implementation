@@ -49,6 +49,13 @@ const sidebars = {
         'theory/cybersecurity-context',
       ],
     },
+    {
+      type: 'category',
+      label: 'Experiments',
+      items: [
+        'experiments/input-dataset',
+      ],
+    },
   ],
 };
 

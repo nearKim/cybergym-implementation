@@ -25,6 +25,9 @@ CyberGym is a benchmark designed to evaluate AI agents' ability to identify and 
 - **[Opponent Synthesis](/theory/opponent-synthesis)** - Adaptive opponent generation
 - **[Cybersecurity Context](/theory/cybersecurity-context)** - Security applications
 
+### Experiments
+- **[Input Dataset](/experiments/input-dataset)** - Dataset structure and vulnerability details
+
 ### Weekly Reports
 - **[Latest Report](/weekly/week1-2025-10-03)** - Track project progress
 

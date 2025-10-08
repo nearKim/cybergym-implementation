@@ -90,6 +90,17 @@ const config = {
             ],
           },
           {
+            type: "dropdown",
+            label: "Experiments",
+            position: "left",
+            items: [
+              {
+                label: "Input Dataset",
+                to: "/experiments/input-dataset",
+              },
+            ],
+          },
+          {
             href: "https://github.com/nearKim/cybergym-implementation",
             label: "GitHub",
             position: "right",
