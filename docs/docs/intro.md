@@ -21,8 +21,8 @@ CyberGym is a benchmark designed to evaluate AI agents' ability to identify and 
 ## 📚 Documentation
 
 ### API's and Architecture
-- **[API Reference](/getting-started/api)** - Comprehensive CyberGym API's Functionalities.
-- **[Architecture Overview](/getting-started/architecture)** - CyberGym Architecture Visualization
+- **[API Reference](/theory/api)** - Comprehensive CyberGym API's Functionalities.
+- **[Architecture Overview](/theory/architecture)** - CyberGym Architecture Visualization
 
 ### Theory
 - **[Overview](/theory/overview)** - Framework overview and key contributions
@@ -32,6 +32,11 @@ CyberGym is a benchmark designed to evaluate AI agents' ability to identify and 
 
 ### Experiments
 - **[Input Dataset](/experiments/input-dataset)** - Dataset structure and vulnerability details
+- **[LLM Models](/experiments/llm-models)** - List of supported Large Language Models (LLMs) and their descriptions
+- **[PoC Generation with Cybench](/experiments/cybench)** - End-to-end PoC generation process using the `cybench` engine
+- **[PoC Generation with Codex](/experiments/codex)** - End-to-end PoC generation process using the `codex` engine
+- **[PoC Generation with Enigma](/experiments/enigma)** - End-to-end PoC generation process using the `enigma` engine
+- **[PoC Generation with OpenHands](/experiments/openhands)** - End-to-end PoC generation process using the `openhands` engine
 
 ### Weekly Reports
 - **[Latest Report](/weekly/week1-2025-10-03)** - Track project progress

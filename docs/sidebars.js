@@ -31,8 +31,6 @@ const sidebars = {
       label: 'Getting Started',
       items: [
         'getting-started/installation',
-        'getting-started/architecture',
-        'getting-started/api',
         {
           type: 'category',
           label: 'Quick-Start',
@@ -49,6 +47,8 @@ const sidebars = {
       label: 'Theory',
       items: [
         'theory/overview',
+        'theory/api',
+        'theory/architecture',
         'theory/cybergym-method',
         'theory/evaluation-findings',
         'theory/cybersecurity-context',
@@ -59,6 +59,11 @@ const sidebars = {
       label: 'Experiments',
       items: [
         'experiments/input-dataset',
+        'experiments/LLM-models',
+        'experiments/cybench',
+        'experiments/codex',
+        'experiments/enigma',
+        'experiments/openhands',
       ],
     },
   ],
