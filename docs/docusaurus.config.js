@@ -110,10 +110,6 @@ const config = {
                 to: "/theory/overview",
               },
               {
-                label: "Method",
-                to: "/theory/method",
-              },
-              {
                 label: "CyberGym Method",
                 to: "/theory/cybergym-method",
               },
