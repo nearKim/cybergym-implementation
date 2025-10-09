@@ -25,20 +25,20 @@ To address these issues, we maintain an enhanced fork at [nearKim/cybergym](http
 Before installing CyberGym, ensure you have the following:
 
 ### 1. Docker
-- **Docker Desktop** is required (Docker daemon must be running)
-- Download from [Docker's official website](https://www.docker.com/products/docker-desktop/)
-- **Note**: Colima users should refer to the [Troubleshooting](#troubleshooting) section for additional configuration
+- **Docker Desktop** is required (Docker daemon must be running).
+- Download from [Docker's official website](https://www.docker.com/products/docker-desktop/).
+- **Note**: `colima` users should refer to the [Troubleshooting](#troubleshooting) section for additional configuration.
 
 ### 2. Conda
-- Install [Miniconda](https://www.anaconda.com/docs/getting-started/miniconda/install) or Anaconda
-- Required for managing Python virtual environments
+- Install [Miniconda](https://www.anaconda.com/docs/getting-started/miniconda/install) or Anaconda.
+- Required for managing Python virtual environments.
 
 ### 3. Python
-- Python version **≥ 3.12** is required
-- Will be installed via Conda in the setup process
+- Python version **≥ 3.12** is required.
+- Will be installed via Conda in the setup process.
 
 ### 4. 7z
-- **7z** is required for downloading the OSS-Fuzz dataset
+- **[7z](https://www.7-zip.org/download.html)** is required for downloading and unzipping the OSS-Fuzz dataset.
 
 ## Installation Steps
 
@@ -112,7 +112,7 @@ docker run hello-world
 
 #### Docker Context Configuration
 
-[//]: # TODO: Add Colima setup()
+[//]: # TODO: Add `colima` setup()
 
 For Docker Desktop users:
 ```bash
@@ -161,6 +161,6 @@ ls -la $CYBERGYM_ROOT/oss-fuzz-data/  # Should contain dataset files
 ## Next Steps
 
 After a successful installation:
-1. Continue to [Local Machine Setup](./quick-start/local_machine) for configuration and running your first experiment
-2. Review [Theory Overview](/theory/overview) for understanding the framework
-3. Check [Input Dataset](/experiments/input-dataset) for dataset details
+1. Continue to [Local Machine Setup](./quick-start/local_machine) for configuration and running your first experiment.
+2. Review [Theory Overview](/theory/overview) for understanding the framework.
+3. Check [Experiments](/experiments) for detailed experiment procedure and the design of CyberGym.
