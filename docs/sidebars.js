@@ -49,7 +49,6 @@ const sidebars = {
       label: 'Theory',
       items: [
         'theory/overview',
-        'theory/method',
         'theory/cybergym-method',
         'theory/evaluation-findings',
         'theory/cybersecurity-context',
