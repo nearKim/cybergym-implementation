@@ -39,6 +39,7 @@ const sidebars = {
           items: [
             'getting-started/quick-start/local_machine',
             'getting-started/quick-start/local_machine2',
+            'getting-started/quick-start/poc_generation',
           ],
         },
       ],
@@ -49,8 +50,8 @@ const sidebars = {
       items: [
         'theory/overview',
         'theory/method',
-        'theory/adversarial-learning',
-        'theory/opponent-synthesis',
+        'theory/cybergym-method',
+        'theory/evaluation-findings',
         'theory/cybersecurity-context',
       ],
     },

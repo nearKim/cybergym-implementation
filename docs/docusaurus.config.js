@@ -94,6 +94,10 @@ const config = {
                 label: "Quick Start (Detailed)",
                 to: "/getting-started/quick-start/local_machine2",
               },
+                            {
+                label: "Quick Start (Detailed)",
+                to: "/getting-started/quick-start/poc_generation",
+              },
             ],
           },
           {
@@ -110,12 +114,12 @@ const config = {
                 to: "/theory/method",
               },
               {
-                label: "Adversarial Learning",
-                to: "/theory/adversarial-learning",
+                label: "CyberGym Method",
+                to: "/theory/cybergym-method",
               },
               {
-                label: "Opponent Synthesis",
-                to: "/theory/opponent-synthesis",
+                label: "Evaluation Findings",
+                to: "/theory/evaluation-findings",
               },
               {
                 label: "Cybersecurity Context",
