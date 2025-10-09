@@ -98,7 +98,7 @@ set -e DOCKER_HOST
 
 #### Step 2: Verify Docker Context
 
-Check if the `desktop-linux` namespace exists:
+Check if the `desktop-linux` namespace exists (or `rootless` if running on Rootless Linux):
 
 ```bash
 docker context ls
