@@ -79,14 +79,6 @@ const config = {
                 to: "/getting-started/installation",
               },
               {
-                label: "Architecture",
-                to: "/getting-started/architecture",
-              },
-              {
-                label: "API Reference",
-                to: "/getting-started/api",
-              },
-              {
                 label: "Quick Start (Basic)",
                 to: "/getting-started/quick-start/local_machine",
               },
@@ -110,6 +102,14 @@ const config = {
                 to: "/theory/overview",
               },
               {
+                label: "API Reference",
+                to: "/theory/api",
+              },
+              {
+                label: "Architecture Overview",
+                to: "/theory/architecture",
+              },
+              {
                 label: "CyberGym Method",
                 to: "/theory/cybergym-method",
               },
@@ -131,6 +131,26 @@ const config = {
               {
                 label: "Input Dataset",
                 to: "/experiments/input-dataset",
+              },
+              {
+                label: "LLM Models",
+                to: "/experiments/LLM-models",
+              },
+              {
+                label: "PoC Generation with Cybench",
+                to: "/experiments/cybench",
+              },
+              {
+                label: "PoC Generation with Codex",
+                to: "/experiments/codex",
+              },
+              {
+                label: "PoC Generation with Enigma",
+                to: "/experiments/enigma",
+              },
+              {
+                label: "PoC Generation with OpenHands",
+                to: "/experiments/openhands",
               },
             ],
           },
