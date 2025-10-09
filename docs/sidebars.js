@@ -31,6 +31,8 @@ const sidebars = {
       label: 'Getting Started',
       items: [
         'getting-started/installation',
+        'getting-started/architecture',
+        'getting-started/api',
         {
           type: 'category',
           label: 'Quick-Start',
