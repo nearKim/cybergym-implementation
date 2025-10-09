@@ -31,7 +31,7 @@ TASK_ID=...
 
 Set up on Fish:
 ```sh
-set -U OPENAI_API_KEY sk-...
+export OPENAI_API_KEY="sk-..."
 # CYBERGYM_ROOT should be set to the root directory of your cybergym repository
 set CYBERGYM_DATA_DIR $CYBERGYM_ROOT/oss-fuzz-data
 set OUT_DIR $CYBERGYM_ROOT/cybergym_tmp
@@ -56,7 +56,8 @@ cp .env.example .env
 ```
 
 ### Step 2: Run the One-time Docker Build Command
-Run the following commands inside the `cybench` directory:
+If you have not run the following command before, run the following commands inside the `cybench` directory.
+If you have run it before, skip this step.
 ```bash
 # make sure you are at the cybench directory
 cd ..
