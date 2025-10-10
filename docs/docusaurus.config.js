@@ -71,6 +71,22 @@ const config = {
         items: [
           {
             type: "dropdown",
+            label: "Weekly Reports",
+            position: "left",
+            items: [
+              {
+                label: "Week 1 (2025-10-03)",
+                to: "/weekly/week1-2025-10-03",
+              },
+              {
+                label: "Week 2 (2025-10-09)",
+                to: "/weekly/week1-2025-10-09",
+              },
+              // Add more weekly reports here
+            ],
+          },
+          {
+            type: "dropdown",
             label: "Getting Started",
             position: "left",
             items: [
