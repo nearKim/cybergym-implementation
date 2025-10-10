@@ -1,4 +1,3 @@
-/** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "CyberGym",
   tagline:
@@ -22,7 +21,6 @@ const config = {
   presets: [
     [
       "classic",
-      /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
           routeBasePath: "/", // This makes docs the root
@@ -36,6 +34,28 @@ const config = {
       }),
     ],
   ],
+
+  // Conditionally add mermaid theme if it's installed
+  themes: (() => {
+    try {
+      require.resolve('@docusaurus/theme-mermaid');
+      return ['@docusaurus/theme-mermaid'];
+    } catch {
+      console.warn('Warning: @docusaurus/theme-mermaid is not installed. Mermaid diagrams will not be rendered.');
+      return [];
+    }
+  })(),
+  
+  markdown: {
+    mermaid: (() => {
+      try {
+        require.resolve('@docusaurus/theme-mermaid');
+        return true;
+      } catch {
+        return false;
+      }
+    })(),
+  },
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -71,20 +91,20 @@ const config = {
             position: "left",
             items: [
               {
-                label: "Introduction",
-                to: "/getting-started/introduction",
-              },
-              {
                 label: "Installation",
                 to: "/getting-started/installation",
               },
               {
-                label: "Quick Start (Local Machine)",
+                label: "Quick Start (Basic)",
                 to: "/getting-started/quick-start/local_machine",
               },
               {
-                label: "Configuration",
-                to: "/getting-started/configuration",
+                label: "Quick Start (Detailed)",
+                to: "/getting-started/quick-start/local_machine2",
+              },
+                            {
+                label: "Quick Start (Detailed)",
+                to: "/getting-started/quick-start/poc_generation",
               },
             ],
           },
@@ -98,12 +118,20 @@ const config = {
                 to: "/theory/overview",
               },
               {
-                label: "Method",
-                to: "/theory/adversarial-learning",
+                label: "API Reference",
+                to: "/theory/api",
               },
               {
-                label: "Evaluation and Findings",
-                to: "/theory/opponent-synthesis",
+                label: "Architecture Overview",
+                to: "/theory/architecture",
+              },
+              {
+                label: "CyberGym Method",
+                to: "/theory/cybergym-method",
+              },
+              {
+                label: "Evaluation Findings",
+                to: "/theory/evaluation-findings",
               },
               {
                 label: "Cybersecurity Context",
@@ -113,55 +141,32 @@ const config = {
           },
           {
             type: "dropdown",
-            label: "API Reference",
-            position: "left",
-            items: [
-              {
-                label: "Overview",
-                to: "/api/overview",
-              },
-              {
-                label: "Environments",
-                to: "/api/environments",
-              },
-              {
-                label: "Agents",
-                to: "/api/agents",
-              },
-              {
-                label: "Models",
-                to: "/api/models",
-              },
-              {
-                label: "Training",
-                to: "/api/training",
-              },
-            ],
-          },
-          {
-            type: "dropdown",
             label: "Experiments",
             position: "left",
             items: [
-              {
-                label: "Overview",
-                to: "/experiments/overview",
-              },
               {
                 label: "Input Dataset",
                 to: "/experiments/input-dataset",
               },
               {
-                label: "Baseline Comparisons",
-                to: "/experiments/baseline-comparisons",
+                label: "LLM Models",
+                to: "/experiments/LLM-models",
               },
               {
-                label: "Ablation Studies",
-                to: "/experiments/ablation-studies",
+                label: "PoC Generation with Cybench",
+                to: "/experiments/cybench",
               },
               {
-                label: "Reproduction Guide",
-                to: "/experiments/reproduction-guide",
+                label: "PoC Generation with Codex",
+                to: "/experiments/codex",
+              },
+              {
+                label: "PoC Generation with Enigma",
+                to: "/experiments/enigma",
+              },
+              {
+                label: "PoC Generation with OpenHands",
+                to: "/experiments/openhands",
               },
             ],
           },
@@ -180,11 +185,7 @@ const config = {
             items: [
               {
                 label: "Getting Started",
-                to: "/getting-started/introduction",
-              },
-              {
-                label: "API Reference",
-                to: "/api/overview",
+                to: "/getting-started/installation",
               },
             ],
           },
@@ -194,10 +195,6 @@ const config = {
               {
                 label: "Paper",
                 href: "https://arxiv.org/pdf/2506.02548",
-              },
-              {
-                label: "Experiments",
-                to: "/experiments/overview",
               },
             ],
           },
@@ -219,6 +216,42 @@ const config = {
           autoCollapseCategories: false,
         },
       },
+      prism: (() => {
+        try {
+          // Try to load prism-react-renderer themes
+          let lightTheme, darkTheme;
+
+          // Try newer version first
+          try {
+            const {themes} = require('prism-react-renderer');
+            lightTheme = themes.github;
+            darkTheme = themes.dracula;
+          } catch {
+            // Try older version format
+            try {
+              lightTheme = require('prism-react-renderer/themes/github');
+              darkTheme = require('prism-react-renderer/themes/dracula');
+            } catch {
+              // If prism-react-renderer is not installed, use undefined
+              // Docusaurus will use its default themes
+              lightTheme = undefined;
+              darkTheme = undefined;
+            }
+          }
+          
+          return {
+            theme: lightTheme,
+            darkTheme: darkTheme,
+            additionalLanguages: ['bash', 'python', 'powershell', 'yaml', 'json'],
+          };
+        } catch (error) {
+          // If all fails, return minimal config
+          console.warn('Warning: Could not load prism-react-renderer. Using default code highlighting.');
+          return {
+            additionalLanguages: ['bash', 'python', 'powershell', 'yaml', 'json'],
+          };
+        }
+      })(),
     }),
 };
 
