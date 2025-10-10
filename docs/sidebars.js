@@ -51,7 +51,6 @@ const sidebars = {
         'theory/architecture',
         'theory/cybergym-method',
         'theory/evaluation-findings',
-        'theory/cybersecurity-context',
       ],
     },
     {
