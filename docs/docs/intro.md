@@ -28,7 +28,6 @@ CyberGym is a benchmark designed to evaluate AI agents' ability to identify and 
 - **[Overview](/theory/overview)** - Framework overview and key contributions
 - **[Method](/theory/cybergym-method)** - Technical approach and methodology
 - **[Evaluations](/theory/evaluation-findings)** - Key evaluation results and insights
-- **[Cybersecurity Context](/theory/cybersecurity-context)** - Security applications
 
 ### Experiments
 - **[Input Dataset](/experiments/input-dataset)** - Dataset structure and vulnerability details

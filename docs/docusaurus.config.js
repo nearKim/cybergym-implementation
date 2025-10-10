@@ -133,10 +133,6 @@ const config = {
                 label: "Evaluation Findings",
                 to: "/theory/evaluation-findings",
               },
-              {
-                label: "Cybersecurity Context",
-                to: "/theory/cybersecurity-context",
-              },
             ],
           },
           {
