@@ -44,18 +44,20 @@ set TASK_ID ...
 ```
 
 ## Use Desired PoC Generation Engine
+
+### cybench Engine
 The following uses the `cybench` as an example.
 
-### Step 1: Fill out API Keys
+#### Step 1: Fill out API Keys
 Run the following commands inside the `cybench-repo` directory:
 ```bash
 # Change directory to the folder where the `.env.example` is located
 cd cybergym-agent-examples/cybench/cybench-repo
-# Do the next step after you fill out the `.env.example`
+# Do the next step AFTER you fill out the `.env.example`
 cp .env.example .env
 ```
 
-### Step 2: Run the One-time Docker Build Command
+#### Step 2: Run the One-time Docker Build Command
 If you have not run the following command before, run the following commands inside the `cybench` directory.
 If you have run it before, skip this step.
 ```bash
@@ -64,7 +66,7 @@ cd ..
 docker build -t cybergym/cybench:latest .
 ```
 
-### Step 3: Run the PoC Generation Script
+#### Step 3: Run the PoC Generation Script
 Run the following commands inside the `cybench` directory:
 ```bash
 # make sure you are at the cybench directory
@@ -79,4 +81,20 @@ python3 run.py \
     --timeout 1200 \
     --max_iter 100 \
     --difficulty level1
+```
+
+### Enigma Engine
+The following uses the `enigma` as an example.
+
+#### Step 1: Fill out API Keys
+
+#### Step 2: Run the One-time Docker Build Command
+Run the following commands inside the `enigma` directory.
+```bash
+# make sure you are at the enigma directory
+docker pull sweagent/enigma:latest
+pip install -r requirements.txt
+pip uninstall sweagent
+# please use the following specific version of sweagent
+pip install sweagent==2.0.13
 ```
