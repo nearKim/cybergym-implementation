@@ -102,8 +102,8 @@ const config = {
                 label: "Quick Start (Detailed)",
                 to: "/getting-started/quick-start/local_machine2",
               },
-                            {
-                label: "Quick Start (Detailed)",
+              {
+                label: "PoC Generation",
                 to: "/getting-started/quick-start/poc_generation",
               },
             ],
