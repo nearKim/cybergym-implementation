@@ -60,7 +60,7 @@ const config = {
               },
               {
                 label: "Week 2 (2025-10-09)",
-                to: "/weekly/week1-2025-10-09",
+                to: "/weekly/week2-2025-10-09",
               },
               // Add more weekly reports here
             ],
